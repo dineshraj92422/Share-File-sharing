@@ -68,4 +68,8 @@ router.post('/send', async (req, res) => {
 
 });
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+module.exports = router;
+>>>>>>> 013b445da16804ad842a5cde2568923670bb9a97

@@ -1,3 +1,49 @@
+
+require('dotenv').config();
+const express = require('express');
+const app = express();
+const cors = require('cors');
+
+const path = require('path')
+
+//Template Engine
+
+app.set('views',path.join(__dirname,'/views'))
+app.set('view engine','ejs' )
+
+const corsOptions = {
+  origin: '*', // Allow all origins
+};
+
+
+const connectDB = require('./config/db')();
+
+app.use(cors(corsOptions));
+
+app.use(express.static('public'));
+app.use(express.json())
+
+//Routes
+ 
+//POST
+app.use('/api/files',require('./routes/files.route'));
+
+
+//GET
+app.use('/files',require('./routes/show.route')
+);
+
+//GET
+app.use('/files/downloads',require('./routes/download.route'))
+
+
+
+const PORT = process.env.PORT || 3000
+app.listen(PORT,()=>{
+    console.log('Listening on port ' + PORT);
+    
+})
+=======
 require('dotenv').config();
 const express = require('express');
 const app = express();

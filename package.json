@@ -5,12 +5,32 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
+<<<<<<< HEAD
+    "start": "node server.js"
+=======
     "serve": "node server.js"
+>>>>>>> 013b445da16804ad842a5cde2568923670bb9a97
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "glob": "^11.0.1",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "npm-git-install": "^0.3.0",
+    "rimraf": "^6.0.1",
+    "uuid": "^11.0.5"
+  },
+  "engines": {
+    "node": "16.20.1"
+=======
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
@@ -20,6 +40,7 @@
     "nodemailer": "^6.9.13",
     "npm-git-install": "^0.3.0",
     "uuid": "^9.0.1"
+>>>>>>> 013b445da16804ad842a5cde2568923670bb9a97
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
