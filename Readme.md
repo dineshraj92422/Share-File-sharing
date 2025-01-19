@@ -1,4 +1,4 @@
-# InShare - File Sharing Backend
+# ShareMe - File Sharing Backend
 
 This is the backend service for **InShare**, a file-sharing application that allows users to upload, share, and download files. The backend provides APIs for file sharing, email notifications, link expiration, and file downloads. The project is built using **Node.js**, **Express.js**, and **MongoDB**.
 
@@ -56,7 +56,9 @@ This is the backend service for **InShare**, a file-sharing application that all
     ```bash
       npm start
 
-### Project Structure
+## 📁 Folder Structure  
+
+```plaintext
 Share-file-sharing/
 ├── config/
 │   ├── db.js           # MongoDB connection setup
